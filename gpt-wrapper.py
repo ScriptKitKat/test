@@ -29,3 +29,11 @@ def generate_image(prompt):
 
     with open("otter.png", 'wb') as file:
         file.write(image_response.content)
+
+if __name__ == '__main__':
+    prompt = "What is the capital of the United States?"
+    response = generate_text(prompt)
+    print(response)
+    
+    prompt = "An otter eating a sandwich"
+    generate_image(prompt)    
